@@ -9,8 +9,7 @@ void ft_print_alphabet(void)
         write(1, &c, 1);
         c++;
     }
-    char n = '\n';
-    write(1, &n, 1);
+    write(1, "\n", 1);
 }
 
 int main()
