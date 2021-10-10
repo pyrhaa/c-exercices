@@ -1,18 +1,16 @@
-#include <stdio.h>
 #include <unistd.h>
 
 void ft_print_alphabet(void)
 {
     char c = 'a';
-    int i;
-    i = 97;
     
-    while (i <= 'z')
+    while (c <= 'z')
     {   
         write(1, &c, 1);
         c++;
-        i++;
     }
+    char n = '\n';
+    write(1, &n, 1);
 }
 
 int main()
