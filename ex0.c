@@ -1,6 +1,13 @@
-#include <stdio.h>
+#include <unistd.h>
 
-int main(void) {
-  printf("Azul World");
-  return 0;
+void ft_putchar(char c)
+{
+    write(1, &c, 1);
+}
+
+int main()
+{
+    ft_putchar('@');
+    ft_putchar('\n');
+    return 0;
 }
