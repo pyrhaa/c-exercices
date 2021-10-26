@@ -9,20 +9,33 @@ void ft_print_comb2(void) {
     char d = '1';
 
 
-    
-    while (c <= '9')
+    while (a <= '9')
     {
-        while (d <= '9')
+        while (b <= '8')
         {
-            ft_putchar(c);
-            ft_putchar(d);
-            ft_putchar(',');
-            ft_putchar(' ');
-            d++;
+            while (c <= '9')
+            {
+                while (d <= '9')
+                {
+                    ft_putchar(a);
+                    ft_putchar(b);
+                    ft_putchar(' ');
+                    ft_putchar(c);
+                    ft_putchar(d);
+                    ft_putchar(',');
+                    ft_putchar(' ');
+                    d++;
+                }
+                c++;
+                d= b + 1;
+            }
+            b++;
+            c= '0';
         }
-        c++;
-        d= '0';
+        a++;
     }
+    
+    
 }
 
 int main() {
