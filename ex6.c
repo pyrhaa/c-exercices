@@ -27,7 +27,7 @@ void ft_print_comb2(void) {
                     d++;
                 }
                 c++;
-                d= b + 1;
+                d= '0' + 1;
             }
             b++;
             c= '0';
