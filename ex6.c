@@ -31,6 +31,7 @@ void ft_print_comb2(void) {
             }
             b++;
             c= '0';
+            d= d + 1;
         }
         a++;
     }
