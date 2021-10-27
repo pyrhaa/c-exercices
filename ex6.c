@@ -34,6 +34,8 @@ void ft_print_comb2(void) {
             d= d + 1;
         }
         a++;
+        b= '0';
+        c='0';
     }
     
     
