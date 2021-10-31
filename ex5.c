@@ -33,9 +33,8 @@ void ft_print_comb(void)
         b= a + 1;
         a++;
     }
-    
-}
 
+}
 
 int main()
 {
