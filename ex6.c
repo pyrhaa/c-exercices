@@ -25,7 +25,14 @@ void ft_print_comb2(void)
 		while (nb2 <= 99)
 		{
 			ft_char_number(nb1, nb2);
+			if(nb1 != 98)
+			{
+				ft_putchar(',');
+				ft_putchar(' ');
+			}
+			nb2++;
 		}
+		nb1++;
 	}
 }
 
