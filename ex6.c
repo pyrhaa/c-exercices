@@ -16,39 +16,17 @@ void ft_char_number(int nb1, int nb2)
 
 void ft_print_comb2(void)
 {
-    char a = '0';
-    char b = '0';
-    char c = '0';
-    char d = '1';
+	int nb1 = 0;
+	int nb2 = 0;
 
-    while (a <= '9')
-    {
-        while (b <= '8')
-        {
-            while (c <= '9')
-            {
-                while (d <= '9')
-                {
-                    ft_putchar(a);
-                    ft_putchar(b);
-                    ft_putchar(' ');
-                    ft_putchar(c);
-                    ft_putchar(d);
-                    ft_putchar(',');
-                    ft_putchar(' ');
-                    d++;
-                }
-                c++;
-                d= '0' + 1;
-            }
-            b++;
-            c= '0';
-            d= d + 1;
-        }
-        a++;
-        b= '0';
-        c='0';
-    }
+	while (nb1 <= 98)
+	{
+		nb2 = nb1 + 1;
+		while (nb2 <= 99)
+		{
+			ft_char_number(nb1, nb2);
+		}
+	}
 }
 
 int main()
