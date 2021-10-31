@@ -1,8 +1,21 @@
 #include <unistd.h>
 
-void ft_putchar(char c) { write(1, &c, 1); }
+void ft_putchar(char c)
+{
+	write(1, &c, 1);
+}
 
-void ft_print_comb2(void) {
+void ft_char_number(int nb1, int nb2)
+{
+	ft_putchar(nb1 / 10 + 48);
+	ft_putchar(nb1 % 10 + 48);
+	ft_putchar(' ');
+	ft_putchar(nb2 / 10 + 48);
+	ft_putchar(nb2 % 10 + 48);
+}
+
+void ft_print_comb2(void)
+{
     char a = '0';
     char b = '0';
     char c = '0';
