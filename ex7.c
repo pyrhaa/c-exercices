@@ -14,16 +14,21 @@ void ft_putnbr(int nb)
 		ft_putchar('0');
 	}
 
-	while(nb > 9 || nb != 0)
+	if(nb <= 9)
 	{
-		ft_putchar('0' + (a % 10));
-		nb = a / 10;
+		ft_putchar('0' + nb);
 	}
-	ft_putchar(nb);
+
+	while(nb > 9)
+	{
+		nb = a / 10;
+		ft_putchar('0' + (a % 10));
+	}
 }
 
 int main()
 {
-	ft_putnbr(0);
+	ft_putnbr(9);
+	ft_putchar('\n');
 	return 0;
 }
