@@ -11,11 +11,19 @@ void ft_putnbr(int nb)
 	{
 		ft_putchar(nb + '0');
 	}
+	else
+	{
+		nb = nb / 10 + '0';
+		ft_putchar(nb);
+		nb = nb % 10 + '0';
+		ft_putchar(nb);
+	}
+
 }
 
 int main()
 {
-	ft_putnbr(9);
+	ft_putnbr(42);
 	ft_putchar('\n');
 	return 0;
 }
