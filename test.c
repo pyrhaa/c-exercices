@@ -9,7 +9,7 @@ void ft_putnbr(int nb)
 {
 	if (nb < 0)
 	{
-		nb = -nb;
+		
 	}
 	if (nb >= 10)
 	{
