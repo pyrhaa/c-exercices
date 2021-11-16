@@ -1,4 +1,5 @@
 #include <unistd.h>
+#include <stdio. h>
 
 void ft_putchar(char c)
 {
@@ -15,12 +16,12 @@ void ft_print_combn(int n)
 {
 	int a;
 	int b;
-	int tab[10]
+	int tab[10];
+
 }
 
 int main()
 {
-    ft_putchar('@');
-    ft_putchar('\n');
+    ft_print_combn();
     return 0;
 }
