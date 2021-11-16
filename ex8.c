@@ -13,7 +13,9 @@ void ft_char_number(int nb)
 
 void ft_print_combn(int n)
 {
-
+	int a;
+	int b;
+	int tab[10]
 }
 
 int main()
