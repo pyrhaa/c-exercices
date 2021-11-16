@@ -13,13 +13,7 @@ void ft_char_number(int nb)
 
 void ft_print_combn(int n)
 {
-	while (n <= 89)
-	{
-		while ()
-		{
-		
-		}
-	}
+
 }
 
 int main()
